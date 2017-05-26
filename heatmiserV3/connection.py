@@ -11,6 +11,7 @@ class HeatmiserConnection(object):
         self.port = None
         self.connection = None
         self.protocol = None
+        self.status = None
 
     @classmethod
     def serial(cls, ipaddress, port):

@@ -96,7 +96,7 @@ class TestProtocolTCP(unittest.TestCase):
         status = self.protocol.dcb_to_status(dcb)
         assert status['product']['model'] == 'PRT-E'
         assert status['product']['version'] == 1.5
-        print(status)
+        # print(status)
         assert len(status['comfort']) == 2
         assert len(status['comfort'][0]) == 4
         assert len(status['comfort'][1]) == 3
